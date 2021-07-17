@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aumit Das" />
+    <meta name="description" content="We love JavaScript" />
+    <title>Book-List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Book List</h1>
+
+      <form>
+        <label for="book-name">Book Name</label>
+        <input
+          type="text"
+          id="title"
+          placeholder="Book Name"
+          class="u-full-width"
+        />
+        <label for="author">Author</label>
+        <input
+          type="text"
+          id="author"
+          placeholder="Author Name"
+          class="u-full-width"
+        />
+        <label for="isbn">ISBN No:</label>
+        <input
+          type="number"
+          id="isbn"
+          placeholder="ISBN No"
+          class="u-full-width"
+        />
+        <input type="submit" value="Add Book" />
+      </form>
+
+      <hr />
+
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
